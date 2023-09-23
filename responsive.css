@@ -1,0 +1,131 @@
+@media only screen and (max-width: 380px) {
+
+   body {
+    height: 100vh;
+        width: 380px;
+        margin: auto;
+   }
+
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        width: 380px;
+        margin: auto;
+    }
+
+    .header {
+        display: flex;
+        width: 320px;
+        height: 72px;
+        padding: 0px;
+    }
+
+    .header__right {
+        width: 120px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main__section {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 1;
+        height: 100%;
+        width: 380px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 10px 40px;
+    }
+
+    .main__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 380px;
+
+    }
+
+    .main__left__heading>h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .main__left__desc {
+        font-size: 13px;
+        font-weight: 400;
+        width: 340px;
+        height: 66px;
+        color: #645f5f;
+        padding: 10px 10px;
+
+    }
+
+    .cta {
+        width: 340px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .btn1 {
+        padding: 2px 10px;
+        width: 200px;
+    }
+
+    .btn1>a {
+        font-size: 16px;
+    }
+
+    .btn2 {
+        padding: 2px 10px;
+        width: 200px;
+    }
+
+    .btn2>a {
+        font-size: 16px;
+    }
+
+    .main__left__explore {
+        width: 340px;
+        height: 227px;
+        margin: 20px 0;
+    }
+
+    .main__left__explore__heading>h3 {
+        font-size: 20px;
+    }
+
+    .main__left__explore__heading>p {
+        font-size: 14px;
+    }
+    .scroll__container {
+        margin-top: 20px;
+    }
+    .main__left__explore__images> button {
+        display: none;
+    }
+
+
+    .main__right {
+        width: 380px;
+        height: 100%;
+        padding: 10px;
+        
+    }
+
+    .main__right__image {
+        position: absolute;
+        height: 290px;
+        width: 380px;
+        top:20px;
+        
+    }
+}
