@@ -142,6 +142,7 @@ body {
     height: 100%;
     width: 1300px;
     margin: auto;
+    justify-content: space-between;
 
 }
 
@@ -367,37 +368,94 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 50%;
+    height: calc(100vh - 72px);
+    width: 560px;
     position: relative;
 }
 
-.main__right__image {
-    position: absolute;
-    height: 422.7px;
-    width: 560px;
-    animation: slideInRight 1s ease-in-out forwards;
+.carousel {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 72px);
+    border: 2px solid red;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-.main__right__image:hover {
-    filter: drop-shadow(0 10px 10px rgb(0 0 0 / 0.95));
+/* Styles for individual carousel items */
+.carousel__item {
+    flex:0 0 100%;
+    transition: transform 2s;
+    height: calc(100vh - 72px);
 }
 
-.main__right__image::after {
-    content: '';
-    display: block;
+.carousel__item >{
+ 
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    
+    border: 2px solid blue;
+}
+
+
+.bg__image1 {
+    background-image: url('./images/bg__image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    z-index: -1;
+   
+}
+.bg__image1 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
 }
 
-.bg__image {
-    height: 360px;
-    position: absolute;
+.bg__image2 {
+    background-image: url('./images/bg__image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+.bg__image2 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
+}
+
+.bg__image3 {
+    background-image: url('./images/bg__image3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+.bg__image3 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
+}
+
+.bg__image4  {
+    background-image: url('./images/bg__image4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.bg__image4 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
 }
 
 

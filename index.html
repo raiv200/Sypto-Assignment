@@ -56,7 +56,7 @@
           <div>
             <div class="main__left__heading">
               <h2 class="typing__text">Tailoring Travel</h2>
-              <h2 class="typing__text"">Adventures Just for You!</h2>
+              <h2 class="typing__text">Adventures Just for You!</h2>
             </div>
             <p class="main__left__desc">
               Your Ultimate Travel Itinerary Crafting Companion! Build your Next
@@ -88,7 +88,6 @@
                     <p>Delhi</p>
                   </div>
                 </div>
-             
               </div>
               <button class="btn3">
                 <img class="" src="./images/chevron-right.svg" />
@@ -98,9 +97,51 @@
         </div>
 
         <div class="main__right">
-          <img class="main__right__image" src="./images/hero__banner.png" />
+          <div class="carousel">
+            <div class="carousel__item">
+              <div class="bg__image1">
+                <img src="./images/hero__banner1.png" />
+              </div>
+            </div>
+            <div class="carousel__item">
+               <div class="bg__image2">
+
+                 <img src="./images/hero__banner2.png" />
+                </div>
+            </div>
+            <div class="carousel__item">
+               <div class="bg__image3">
+
+                 <img src="./images/hero__banner3.png" />
+                </div>
+            </div>
+            <div class="carousel__item">
+               <div class="bg__image4">
+
+                 <img src="./images/hero__banner4.png" />
+                </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("carousel__item");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
+      }
+    </script>
   </body>
 </html>
