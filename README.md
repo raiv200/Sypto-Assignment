@@ -1,5 +1,7 @@
 # Sypto Task - Web Design Assignment - 22 Sep, 2023
 
+![Travel Design Figma File](./images/sypto__travel__web__design__image.png)
+
 ## Task
 
 To design a Landing Page Hero Section of a  Travel Website.
