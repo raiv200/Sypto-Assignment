@@ -377,7 +377,6 @@ body {
     display: flex;
     width: 100%;
     height: calc(100vh - 72px);
-    border: 2px solid red;
     overflow: hidden;
     margin: 0 auto;
 }
